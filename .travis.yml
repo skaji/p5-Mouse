@@ -2,6 +2,7 @@ sudo: false
 language: perl
 install:
   - cpanm --quiet --installdeps --notest --with-configure .
+  - cpanm -nq Module::Build Test::More Module::Build::XSUtil Devel::PPPort version Test::Harness
 script:
   - perl -le 'my @m = qw(Module::Build Test::More Module::Build::XSUtil Devel::PPPort version Test::Harness App::Prove); for my $m (@m) { eval "require $m"; if ($@) { warn "$m $@"; next } print "$m ", $m->VERSION }'
   - perl Build.PL && ./Build && ./Build test
