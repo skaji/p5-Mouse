@@ -3,7 +3,7 @@ language: perl
 install:
   - cpanm --quiet --installdeps --notest --with-configure .
 script:
-  - perl -le 'my @m = qw(Module::Build Module::Build::XSUtil Devel::PPPort version Test::Harness App::Prove); for my $m (@m) { eval "require $m"; if ($@) { warn "$m $@"; next } print "$m ", $m->VERSION }'
+  - perl -le 'my @m = qw(Module::Build Test::More Module::Build::XSUtil Devel::PPPort version Test::Harness App::Prove); for my $m (@m) { eval "require $m"; if ($@) { warn "$m $@"; next } print "$m ", $m->VERSION }'
   - perl Build.PL && ./Build && ./Build test
   - prove -b -r t
 perl:

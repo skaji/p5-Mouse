@@ -10,7 +10,7 @@ on configure => sub {
     requires 'Devel::PPPort', '3.33';
     requires 'ExtUtils::ParseXS', '3.22';
     requires 'Module::Build::XSUtil';
-    requires 'version', '0.77';
+    requires 'version', '0.9913';
 };
 
 on 'test' => sub {
