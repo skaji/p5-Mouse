@@ -9,13 +9,7 @@ use File::Spec;
 use lib File::Spec->catdir( dirname($0), basename($0, '.t') );
 
 BEGIN {
-    eval { use_ok('Holder') } or warn $@;
-    warn "\n";
-    warn $_ for @INC;
-    warn "\n";
-    warn "$_: $INC{$_}" for sort keys %INC;
-    warn "\n";
-
+    use_ok('Holder');
 }
 
 done_testing();
