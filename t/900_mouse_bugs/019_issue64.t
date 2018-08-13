@@ -9,7 +9,10 @@ use File::Spec;
 use lib File::Spec->catdir( dirname($0), basename($0, '.t') );
 
 BEGIN {
-    use_ok('Holder');
+    eval { use_ok('Holder'); 1 } or do {
+        diag explain \@INC;
+        diag explain \%INC;
+    };
 }
 
 done_testing();
