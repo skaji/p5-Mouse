@@ -193,6 +193,15 @@ sub find_attribute_by_name {
     my($self, $name) = @_;
     defined($name)
         or $self->throw_error('You must define an attribute name to find');
+    my @attr = $self->get_all_attributes;
+    if (grep { !defined $_ } @attr) {
+        require Carp;
+        require Data::Dumper;
+        warn Data::Dumper::Dumper(\@INC);
+        warn Data::Dumper::Dumper(\@INC);
+        warn Data::Dumper::Dumper($self);
+        Carp::confess(Data::Dumper::Dumper(\@attr));
+    }
     foreach my $attr($self->get_all_attributes) {
         return $attr if $attr->name eq $name;
     }

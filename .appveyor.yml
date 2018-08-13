@@ -11,4 +11,26 @@ install:
 test_script:
   - perl Build.PL
   - perl ./Build
-  - perl ./Build test
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
