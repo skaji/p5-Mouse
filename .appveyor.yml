@@ -11,4 +11,4 @@ install:
 test_script:
   - perl Build.PL
   - perl ./Build
-  - prove -b t\900_mouse_bugs\019_issue64.t
+  - perl ./Build test
