@@ -6,15 +6,10 @@ use Test::More;
 use File::Basename;
 use File::Spec;
 
-use lib File::Spec->catdir( dirname($0), basename($0, '.t') );
+use lib "t/900_mouse_bugs/019_issue64";
 
 BEGIN {
     use_ok('Holder');
-        diag "-----------";
-        diag $@;
-        diag "-----------";
-        diag explain \@INC;
-        diag explain \%INC;
 }
 
 done_testing();

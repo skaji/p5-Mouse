@@ -33,3 +33,10 @@ test_script:
   - prove -b t\900_mouse_bugs\019_issue64.t
   - prove -b t\900_mouse_bugs\019_issue64.t
   - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
+  - prove -b t\900_mouse_bugs\019_issue64.t
