@@ -51,15 +51,15 @@ sub ACTION_test {
         $self->depends_on('moose_compat_test');
     }
 
-    if (!$self->pureperl_only) {
-        local $ENV{MOUSE_XS} = 1;
-        $self->log_info("xs tests.\n");
-        $self->SUPER::ACTION_test(@args);
-    }
-
     {
         local $ENV{PERL_ONLY} = 1;
         $self->log_info("pureperl tests.\n");
+        $self->SUPER::ACTION_test(@args);
+    }
+
+    if (!$self->pureperl_only) {
+        local $ENV{MOUSE_XS} = 1;
+        $self->log_info("xs tests.\n");
         $self->SUPER::ACTION_test(@args);
     }
 }
